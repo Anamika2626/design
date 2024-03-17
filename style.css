@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color : #03a9f4;
+    --fontColor : white;
+    --subFont : #728197;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-color{
+    background-color: var(--color);
+    color: var(--fontColor);
+    border: none;
+}
+.btn-color:hover{
+    background-color: var(--color);
+    color: var(--fontColor);
+}
+
+.sub-heading{
+    color: var(--subFont);
+}
+
+.gap{
+    margin-top: -7px;
+}
+
+/*---------------------------NavBar------------------------*/
+.list ul li{
+    display: inline-block;
+    padding-right: 8px;
+}
+
+/*---------------------------Section1----------------------*/
+section{
+    background-image: linear-gradient(rgba(216, 231, 241, 0.8),rgba(211, 232, 243, 0.8)); 
+}
+
+/*---------------------------Section2---------------------------*/
+.icon{
+    background-color: #4FC3F7;
+    color: white;
+    padding: 16px;
+}
+
+/*---------------------Section4,5 Content------------------*/
+.img-box{
+    
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+}
+.img-box2{
+    width: 65%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/*-------------------------Media Queries-----------------------*/
+@media (max-width: 768px) {
+    .navbar-brand,
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .list{
+        padding-top: 15px;
+    }
+
+}
